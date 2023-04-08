@@ -1,0 +1,212 @@
+@media only screen and (max-width: 768px) {
+    main {
+      width: 100%;
+      flex-direction: column;
+    }
+  }
+  
+  @media only screen and (max-width: 768px) {
+    .results {
+      width: 100%;
+      margin-top: 20px;
+    }
+  }
+  
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+
+:root {
+    --light-red: hsl(0, 100%, 67%);
+    --orangey-yellow: hsl(39, 100%, 56%);
+    --green-teal: hsl(166, 100%, 37%);
+    --cobalt-blue: hsl(234, 85%, 45%, 0.85);
+  
+    --light-slate-blue-background: hsl(252, 100%, 67%);
+    --light-royal-blue-background: hsl(241, 81%, 54%);
+  
+    --violet-blue-circle: hsla(256, 72%, 46%, 1);
+    --persian-blue-circle: hsla(241, 72%, 46%, 0);
+  
+    --white: hsl(0, 0%, 100%);
+    --pale-blue: hsl(221, 100%, 96%);
+    --light-lavender: hsl(241, 100%, 89%);
+    --dark-gray-blue: hsl(224, 30%, 27%);
+  }
+
+
+  body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    margin: 0;
+    min-height: 100vh;
+    font-family: 'Hanken Grotesk', sans-serif;
+    flex-wrap: wrap;
+}
+
+  main {
+    max-width: 46em;
+    display: flex;
+    border-radius: 25px;
+    box-shadow: 20px 15px 31px #dadff9;
+    background-color: white;
+    align-items: center;
+
+}
+
+.sg-header {
+    min-width: 23em;
+    background-image: linear-gradient(var(--light-slate-blue-background), var(--light-royal-blue-background));
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.sg-title {
+    margin: 1.6em 0 1.6em 0;
+    color: hsl(241, 100%, 89%);
+}
+
+.score-large {
+    background-image: linear-gradient(hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+    border-radius: 50%;
+    width: 12em;
+    height: 12em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.score-large > p:nth-child(2) {
+    color: hsl(241, 100%, 89%)
+}
+
+.score-textlarge {
+    font-size: 4.4em;
+    font-weight: 700;
+    color: hsl(0, 0%, 100%);
+}
+
+.sg-header > p:nth-child(3) {
+    color: white;
+    font-size: 2em;
+    font-weight: 600;
+    margin: 1em 0 0.5em 0;
+}
+
+.sg-header > p:last-child {
+    margin: 0 4em 3em;
+    font-size: 1.0em;
+    color: white;
+    padding: 20px;
+}
+
+.results {
+    padding: 20px;
+    max-width: 100%;
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .results h1:first-child {
+    margin-bottom: 10px;
+    color: hsl(224, 30%, 27%);
+  }
+
+ .summary-item span {
+    font-weight:bold;
+    padding-right: 5px;
+ }
+ img {
+    padding-right: 10px;
+ }
+
+.container {
+    display: flex;
+    flex-direction: row;
+}
+
+.summary-item {
+    margin: 10px 0;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    justify-content: space-between;
+}
+  .reaction {
+    background-color: hsl(0, 100%, 67%, 10%);
+  }
+
+  .memory {
+    background-color: hsl(39, 100%, 56%, 10%);
+  }
+
+  .verbal {
+    background-color: hsl(166, 100%, 37%, 10%);
+  }
+
+  .visual {
+    background-color: hsl(234, 85%, 45%, 10%);
+  }
+
+  h1 {
+    font-size: 20px;
+  }
+  
+
+  .reaction h1 {
+    color: var(--light-red);
+  }
+  
+  .memory h1 {
+    color: var(--orangey-yellow);
+  }
+  
+  .verbal h1 {
+    color: var(--green-teal);
+  }
+
+  .visual h1 {
+    color: var(--cobalt-blue);
+  }
+
+
+button {
+    color: var(--white);
+    width: 100%;
+    border: none;
+    background-color: var(--dark-gray-blue);
+    font-family: 'Hanken Grotesk';
+    font-weight: 500;
+    font-size: large;
+    padding: 10px;
+    border-radius: 25px;
+    margin-top: 10px;
+  }
+
+  button:hover {
+    background-image: linear-gradient(var(--light-slate-blue-background), var(--light-royal-blue-background));
+    cursor: pointer;
+  }
+  
+
+ /* .sg-header {
+    padding: 20px;
+    color: var(--white);
+    text-align: center;
+    background-image: linear-gradient(var(--light-slate-blue-background), var(--light-royal-blue-background));
+    border-radius: 0 0 30px 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  } */
